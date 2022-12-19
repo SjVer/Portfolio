@@ -1,0 +1,75 @@
+:root {
+    --bg-1: #21252b;
+    --bg-2: #282c34;
+
+    --fg-1: #abb2bf;
+    --blue: #61afef;
+    --cyan: #56b6c2;
+    --red: #e06c75;
+    --yellow: #e5c07b;
+    --orange: #d19a66;
+    --green: #98c379;
+
+    --normal-font-family: "Consolas","Andale Mono WT","Andale Mono",
+                          "Lucida Console","Lucida Sans Typewriter",
+                          "DejaVu Sans Mono","Bitstream Vera Sans Mono",
+                          "Liberation Mono","Nimbus Mono L","Monaco",
+                          "Courier New","Courier",monospace;
+}
+
+body {
+    color: var(--fg-1);
+    background-color: var(--bg-1);
+
+    text-align: justify;
+    line-height: 1.6rem;
+    font-family: var(--normal-font-family);
+
+    padding: 10px 50px;
+}
+
+a { color: var(--blue) }
+
+h3 { margin: 0}
+
+p:first-child { margin-block-start: 3px !important }
+p:last-child { margin-block-end: 3px !important }
+
+footer {
+    background-color: var(--bg-1);
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    padding: 10px;
+}
+
+red { color: var(--red) !important }
+blue { color: var(--blue) !important }
+cyan { color: var(--cyan) !important }
+green { color: var(--green) !important }
+yellow { color: var(--yellow) !important }
+orange { color: var(--orange) !important }
+
+.heading {
+    background-color: var(--bg-1);
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    padding: 10px;
+}
+
+.vbox { flex-flow: column }
+.vbox > * {
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hbox {
+    max-width: 1000px;
+    display: flex;
+}
+.hbox * { flex-grow: 1 }
+.hbox > *:not(:last-child) { margin-right: 50px }
+
+.hcenter { text-align: center }
