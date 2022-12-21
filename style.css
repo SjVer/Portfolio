@@ -24,8 +24,6 @@ body {
     text-align: justify;
     line-height: 1.6rem;
     font-family: var(--normal-font-family);
-
-    padding: 10px 50px;
 }
 
 a { color: var(--blue) }
@@ -51,14 +49,15 @@ yellow { color: var(--yellow) !important }
 orange { color: var(--orange) !important }
 
 .heading {
-    background-color: var(--bg-1);
-    position: fixed;
-    top: 0px;
     width: 100%;
-    padding: 10px;
+    padding-top: 10px;
 }
 
-.vbox { flex-flow: column }
+.vbox {
+    flex-flow: column;
+    margin: 0px 50px;
+    margin-top: 0px !important;
+}
 .vbox > * {
     margin-bottom: 40px;
     margin-left: auto;
